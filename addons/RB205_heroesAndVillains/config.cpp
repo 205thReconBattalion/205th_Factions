@@ -57,6 +57,10 @@ class CfgVehicles
 		backpack = "";
 		weapons[] = {"Throw","Put"};
 		respawnweapons[] = {"Throw","Put"};
+		magazines[] = {};
+		respawnMagazines[] = {};
+		linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 	};
 };
 class CfgWeapons

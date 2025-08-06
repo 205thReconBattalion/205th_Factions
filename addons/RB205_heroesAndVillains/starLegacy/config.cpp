@@ -50,11 +50,11 @@ class CfgWeapons
 	{
 		class ItemInfo;
 	};
+	
 	class sw_lore_U_anakinSkywalker: RB205_factions_hav_U_base
 	{
 		ACCESS_TRUE
 		displayName = "[HaV] Anakin Skywalker";
-		//model = "jedi_uniform\Anakin_uniform.p3d";
 		picture = "\jedi_uniform\data\ui\icon_Anakin_uniform_ca.paa";
 		class ItemInfo: ItemInfo { uniformClass = "sw_lore_anakinSkywalker"; };
 	};
