@@ -16,5 +16,5 @@
 #define SUBCATEGORY_OTHER "RB205_lore_other"
 
 // INVENTORY
-#define FORCE_JEDI "WBK_Cybercrystal","Force_tir_3"
-#define FORCE_SITH "WBK_Cybercrystal","Force_tir_3","Force_tir_Sith"
+#define FORCE_JEDI "WBK_Cybercrystal","Force_tir_3","WBK_Baf_Choking","WBK_Baf_Push","WBK_Baf_Frozen","WBK_Baf_Fire"
+#define FORCE_SITH FORCE_JEDI,"Force_tir_Sith"

@@ -3,8 +3,7 @@ class cfgPatches
 	class RB205_factions_heroesAndVillains
 	{
 		requiredAddons[] = {
-			"RB205_core",
-			"RB205_cis_droids_bx"
+			"RB205_core"
 		};
 		requiredVersion = 1.0;
 		units[] = {};
@@ -81,9 +80,11 @@ class CfgVehicles
 	};
 	class RB205_factions_hav_droid_base: RB205_factions_hav_base
 	{
+		side = SIDE_REDFOR;
+		faction = FACTION_VILLAIN;
 		editorSubCategory = "RB205_lore_other";
-		linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","ItemRadio","RB205_V_BX","JLTS_NVG_droid_chip_2"};
-		respawnLinkedItems[] = {"ItemMap","ItemCompass","ItemWatch","ItemRadio","RB205_V_BX","JLTS_NVG_droid_chip_2"};
+		linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","ItemRadio","JLTS_NVG_droid_chip_2"};
+		respawnLinkedItems[] = {"ItemMap","ItemCompass","ItemWatch","ItemRadio","JLTS_NVG_droid_chip_2"};
 		DROID_SOUNDS
 	};
 };
