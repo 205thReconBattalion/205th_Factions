@@ -1,6 +1,6 @@
 class cfgPatches
 {
-	class RB205_factions_starLegacy
+	class RB205_factions_hav_starLegacy
 	{
 		requiredAddons[] =
         {
