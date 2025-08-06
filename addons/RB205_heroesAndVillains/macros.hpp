@@ -1,4 +1,5 @@
 #include "\RB205_core\macros.hpp"
+#include "\RB205_cis\droids\macros.hpp"
 
 // SIDE
 #define SIDE_BLUEFOR 1

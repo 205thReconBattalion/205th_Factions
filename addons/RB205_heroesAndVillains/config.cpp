@@ -2,7 +2,10 @@ class cfgPatches
 {
 	class RB205_factions_heroesAndVillains
 	{
-		requiredAddons[] = {};
+		requiredAddons[] = {
+			"RB205_core",
+			"RB205_cis_droids_bx"
+		};
 		requiredVersion = 1.0;
 		units[] = {};
 		weapons[] = {};
@@ -61,6 +64,27 @@ class CfgVehicles
 		respawnMagazines[] = {};
 		linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 		respawnLinkedItems[] = {"ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+	class RB205_factions_hav_jedi_base: RB205_factions_hav_base
+	{
+		side = SIDE_BLUEFOR;
+		faction = FACTION_HERO;
+		editorSubcategory = SUBCATEGORY_JEDI;
+		magazines[] = { FORCE_JEDI };
+	};
+	class RB205_factions_hav_sith_base: RB205_factions_hav_base
+	{
+		side = SIDE_REDFOR;
+		faction = FACTION_VILLAIN;
+		editorSubcategory = SUBCATEGORY_SITH;
+		magazines[] = { FORCE_SITH };
+	};
+	class RB205_factions_hav_droid_base: RB205_factions_hav_base
+	{
+		editorSubCategory = "RB205_lore_other";
+		linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","ItemRadio","RB205_V_BX","JLTS_NVG_droid_chip_2"};
+		respawnLinkedItems[] = {"ItemMap","ItemCompass","ItemWatch","ItemRadio","RB205_V_BX","JLTS_NVG_droid_chip_2"};
+		DROID_SOUNDS
 	};
 };
 class CfgWeapons
