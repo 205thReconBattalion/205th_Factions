@@ -278,7 +278,7 @@ class cfgWeapons
 	class RB205_U_nimbusCommando: ls_jabiimUniform_nimbusCommando
 	{
 		ACCESS_TRUE
-		displayName = "Nimbus Commando Uniform";
+		displayName = "[CIS] Nimbus Commando Uniform";
 		class ItemInfo: ItemInfo
 		{
 			uniformClass = "RB205_nimbusCommando";
@@ -289,14 +289,14 @@ class cfgWeapons
 	class RB205_H_nimbusCommando: ls_jabiimHelmet_nimbusCommando
 	{
 		ACCESS_TRUE
-		displayName = "Nimbus Commando Helmet";
+		displayName = "[CIS] Nimbus Commando Helmet";
 	};
 
 	class RB205_vest_co_base;
 	class RB205_V_nimbusCommando: RB205_vest_co_base
 	{
 		ACCESS_TRUE
-		displayName = "Nimbus Commando Vest";
+		displayName = "[CIS] Nimbus Commando Vest";
 	};
 };
 
