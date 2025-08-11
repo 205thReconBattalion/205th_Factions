@@ -151,7 +151,7 @@ class CfgGroups
 	{
 		class RB205_cis_groups
 		{
-			name = "[205] Confederacy of Independent Systems";
+			name = "[205] CIS";
 			class Infantry_B1
 			{
 				name = "B1 Battle Droids";

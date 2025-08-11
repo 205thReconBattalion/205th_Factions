@@ -27,7 +27,7 @@ class CfgGroups
 	{
 		class RB205_cis_groups
 		{
-			name = "[205] Confederacy of Independent Systems";
+			name = "[205] CIS";
 			class Vehicle
             {
                 name = "Vehicles";

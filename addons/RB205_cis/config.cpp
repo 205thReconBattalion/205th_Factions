@@ -16,7 +16,7 @@ class CfgFactionClasses
 {
 	class RB205_cis
 	{
-		displayName = "[205] Confederacy of Independent Systems";
+		displayName = "[205] CIS";
 		priority = 999;
 		side = 0;
 	};
