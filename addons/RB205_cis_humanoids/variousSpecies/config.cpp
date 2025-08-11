@@ -11,6 +11,8 @@ class cfgPatches
         skipWhenMissingDependencies = 1;
 		requiredVersion = 1.0;
 		units[] = {
+			"RB205_cis_humanoid_soldier_base",
+			"RB205_cis_humanoid_officer_base",
 			"RB205_cis_humanoid_aqualish",
 			"RB205_cis_humanoid_aqualish_officer",
 			"RB205_cis_humanoid_duros",
@@ -46,7 +48,9 @@ class CfgVehicles
 	class JMSLLTE_EmpOfficer_CISs_F;
 	class RB205_cis_humanoid_soldier_base: JMSLLTE_EmpOfficer_CISs_F
 	{
-		ACCESS_FALSE
+		ACCESS_TRUE
+		displayName = "Human Soldier";
+		identityTypes[] = {"LanguageENG_F","Head_NATO"};
 		uniformClass = "RB205_U_cis_humanoid_soldier";
 		
 		side = 0;
@@ -84,7 +88,9 @@ class CfgVehicles
 	class JMSLLTE_EmpOfficer_CIS_F;
 	class RB205_cis_humanoid_officer_base: JMSLLTE_EmpOfficer_CIS_F
 	{
-		ACCESS_FALSE
+		ACCESS_TRUE
+		displayName = "Human Officer";
+		identityTypes[] = {"LanguageENG_F","Head_NATO"};
 		uniformClass = "RB205_U_cis_humanoid_officer";
 		
 		side = 0;
