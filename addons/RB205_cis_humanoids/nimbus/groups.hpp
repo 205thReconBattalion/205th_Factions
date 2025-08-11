@@ -3,7 +3,7 @@ class RB205_nimbusCommando_patrol
     name = "[2] Patrol";
     icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
     side = 0;
-    faction = "RB205_cis";
+    faction = "RB205_cis_humanoids";
     class Unit0
     {
         side = 0;
@@ -24,7 +24,7 @@ class RB205_nimbusCommando_patrol_sniper
     name = "[2] Patrol (Sniper)";
     icon = "\A3\ui_f\data\map\markers\nato\o_recon.paa";
     side = 0;
-    faction = "RB205_cis";
+    faction = "RB205_cis_humanoids";
     class Unit0
     {
         side = 0;
@@ -45,7 +45,7 @@ class RB205_nimbusCommando_fireteam
     name = "[4] Fireteam";
     icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
     side = 0;
-    faction = "RB205_cis";
+    faction = "RB205_cis_humanoids";
     class Unit0
     {
         side = 0;
@@ -80,7 +80,7 @@ class RB205_nimbusCommando_fireteam_at
     name = "[4] Fireteam (Anti-Tank)";
     icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
     side = 0;
-    faction = "RB205_cis";
+    faction = "RB205_cis_humanoids";
     class Unit0
     {
         side = 0;
@@ -115,7 +115,7 @@ class RB205_nimbusCommando_fireteam_aa
     name = "[4] Fireteam (Anti-Air)";
     icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
     side = 0;
-    faction = "RB205_cis";
+    faction = "RB205_cis_humanoids";
     class Unit0
     {
         side = 0;
@@ -150,7 +150,7 @@ class RB205_nimbusCommando_squad
     name = "[8] Squad";
     icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
     side = 0;
-    faction = "RB205_cis";
+    faction = "RB205_cis_humanoids";
     class Unit0
     {
         side = 0;

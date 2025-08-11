@@ -307,7 +307,7 @@ class CfgGroups
 		class RB205_cis_humanoids_groups
 		{
 			name = "[205] CIS - Humanoids";
-			class Infantry_B1
+			class Infantry_Nimbus
 			{
 				name = "Nimbus Commando";
 				#include "groups.hpp"
