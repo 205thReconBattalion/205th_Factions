@@ -1,6 +1,6 @@
 class cfgPatches
 {
-	class RB205_cis
+	class RB205_cis_humanoids
 	{
 		requiredAddons[] =
         {
@@ -14,9 +14,9 @@ class cfgPatches
 
 class CfgFactionClasses
 {
-	class RB205_cis
+	class RB205_cis_humanoids
 	{
-		displayName = "[205] CIS";
+		displayName = "[205] CIS - Humanoids";
 		priority = 999;
 		side = 0;
 	};

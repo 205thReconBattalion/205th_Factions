@@ -1,4 +1,4 @@
-name 		= "205th Recon Battalion - Factions";
+name 		= "205th Recon Battalion | Factions";
 author 		= "Spark";
 logo 		= "logo.paa";
 logoOver	= "logo.paa";

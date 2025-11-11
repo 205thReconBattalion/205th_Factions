@@ -143,46 +143,29 @@ class RB205_AAT_shield: 3AS_Heavy_AAT_Shield_F
     crew = B1_CREWMAN;
 };
 
-class P_TriBase;
-class RB205_triDroid: P_TriBase
+class 3AS_Octuptarra_Combat_F;
+class RB205_triDroid: 3AS_Octuptarra_Combat_F
 {
     faction = "RB205_cis";
     editorSubCategory = "RB205_cis_tank";
     displayName = "[TRI] Octuptarra Tri-Droid";
     crew = B1_CREWMAN;
-
-    armor = 500;
-    class HitPoints {
-        class HitHull {
-            armor = 4.5; //1.6;
-            explosionShielding = 0.2; //10;
-            passThrough = 1; //0.08;
-            minimalHit = 0.2; //0.14;
-            radius = 0.12; //0.11;
-            material = -1;
-            name = "telo";
-            visual = "zbytek";
-        };
-        class HitEngine {
-            armor = 0.75; //1.5;
-            explosionShielding = 0.2; //1;
-            passThrough = 0.2; //0.08;
-            minimalHit = 0.24;
-            radius = 0.33;
-            material = -1;
-            name = "motor";
-        };
-    };
 };
-class P_MangaTri;
-class RB205_triDroid_magna: P_MangaTri
+class 3AS_Octuptarra_Torpedo_F;
+class RB205_triDroid_torpedo: 3AS_Octuptarra_Torpedo_F
+{
+    faction = "RB205_cis";
+    editorSubCategory = "RB205_cis_tank";
+    displayName = "[TRI] Octuptarra Tri-Droid (Torpedo)";
+    crew = B1_CREWMAN;
+};
+class 3AS_Octuptarra_Magna_F;
+class RB205_triDroid_magna: 3AS_Octuptarra_Magna_F
 {
     faction = "RB205_cis";
     editorSubCategory = "RB205_cis_tank";
     displayName = "[TRI|M] Octuptarra Magna Tri-Droid";
     crew = B1_CREWMAN;
-    
-    armor = 500;
 };
 
 class 3AS_Fliknot_F;
