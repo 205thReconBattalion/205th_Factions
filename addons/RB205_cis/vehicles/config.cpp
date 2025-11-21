@@ -31,6 +31,7 @@ class cfgPatches
 			"RB205_AAT_shield",
 
 			"RB205_triDroid",
+			"RB205_triDroid_torpedo",
 			"RB205_triDroid_magna",
 
 			"RB205_flitknot",

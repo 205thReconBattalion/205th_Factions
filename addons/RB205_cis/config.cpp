@@ -19,5 +19,7 @@ class CfgFactionClasses
 		displayName = "[205] CIS";
 		priority = 999;
 		side = 0;
+		icon = "\ls\core\addons\data\insignias\cis_ca.paa";
+		flag = "\ls\core\addons\data\flags\flag_cis_ca.paa";
 	};
 };

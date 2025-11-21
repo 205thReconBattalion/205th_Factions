@@ -148,7 +148,7 @@ class RB205_triDroid: 3AS_Octuptarra_Combat_F
 {
     faction = "RB205_cis";
     editorSubCategory = "RB205_cis_tank";
-    displayName = "[TRI] Octuptarra Tri-Droid";
+    displayName = "[OCT] Octuptarra Tri-Droid";
     crew = B1_CREWMAN;
 };
 class 3AS_Octuptarra_Torpedo_F;
@@ -156,7 +156,7 @@ class RB205_triDroid_torpedo: 3AS_Octuptarra_Torpedo_F
 {
     faction = "RB205_cis";
     editorSubCategory = "RB205_cis_tank";
-    displayName = "[TRI] Octuptarra Tri-Droid (Torpedo)";
+    displayName = "[OCT] Octuptarra Tri-Droid (Torpedo)";
     crew = B1_CREWMAN;
 };
 class 3AS_Octuptarra_Magna_F;
@@ -164,7 +164,7 @@ class RB205_triDroid_magna: 3AS_Octuptarra_Magna_F
 {
     faction = "RB205_cis";
     editorSubCategory = "RB205_cis_tank";
-    displayName = "[TRI|M] Octuptarra Magna Tri-Droid";
+    displayName = "[OCT|M] Octuptarra Magna Tri-Droid";
     crew = B1_CREWMAN;
 };
 

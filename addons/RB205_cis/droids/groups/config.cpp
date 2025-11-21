@@ -156,41 +156,49 @@ class CfgGroups
 			{
 				name = "B1 Battle Droids";
 				#include "b1.hpp"
+                ls_dispenser_available = 1;
 			};
 			class Infantry_B1_geonosis
 			{
 				name = "B1 Battle Droids (Geonosis)";
 				#include "b1_geonosis.hpp"
+                ls_dispenser_available = 1;
 			};
 			class Infantry_B1_training
 			{
 				name = "B1 Battle Droids (Training)";
 				#include "b1_training.hpp"
+                ls_dispenser_available = 1;
 			};
 			class Infantry_B2
 			{
 				name = "B2 Super Battle Droids";
 				#include "b2.hpp"
+                ls_dispenser_available = 1;
 			};
 			class Infantry_BX
 			{
 				name = "BX Commando Droids";
 				#include "bx.hpp"
+                ls_dispenser_available = 1;
 			};
 			class Infantry_BX_training
 			{
 				name = "BX Commando Droids (Training)";
 				#include "bx_training.hpp"
+                ls_dispenser_available = 1;
 			};
 			class Infantry_TS
 			{
 				name = "T-Series Tactical Droids";
 				#include "ts.hpp"
+                ls_dispenser_available = 1;
 			};
 			class Infantry_special
 			{
 				name = "Specialized Droids";
 				#include "special.hpp"
+                ls_dispenser_available = 1;
 			};
 		};
 	};
