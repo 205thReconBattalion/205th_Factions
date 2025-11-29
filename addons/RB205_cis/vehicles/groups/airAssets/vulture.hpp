@@ -7,14 +7,14 @@ class RB205_Vulture_Patrol
     class Unit0
     {
         side = 0;
-        vehicle = "RB205_vulture_aa";
+        vehicle = "RB205_vulture";
         rank = "CORPORAL";
         position[] = {0,0,0};
     };
     class Unit1
     {
         side = 0;
-        vehicle = "RB205_vulture_aa";
+        vehicle = "RB205_vulture";
         rank = "PRIVATE";
         position[] = {0,-20,0};
     };
@@ -28,28 +28,28 @@ class RB205_Vulture_Squad
     class Unit0
     {
         side = 0;
-        vehicle = "RB205_vulture_aa";
+        vehicle = "RB205_vulture";
         rank = "SERGEANT";
         position[] = {0,0,0};
     };
     class Unit1
     {
         side = 0;
-        vehicle = "RB205_vulture_aa";
+        vehicle = "RB205_vulture";
         rank = "PRIVATE";
         position[] = {0,-20,0};
     };
     class Unit2
     {
         side = 0;
-        vehicle = "RB205_vulture_aa";
+        vehicle = "RB205_vulture";
         rank = "PRIVATE";
         position[] = {0,-40,0};
     };
     class Unit3
     {
         side = 0;
-        vehicle = "RB205_vulture_aa";
+        vehicle = "RB205_vulture";
         rank = "PRIVATE";
         position[] = {0,-60,0};
     };
