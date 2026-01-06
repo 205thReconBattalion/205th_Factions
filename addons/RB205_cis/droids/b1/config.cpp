@@ -42,8 +42,9 @@ class cfgPatches
 			"RB205_B1_prototype",
 			"RB205_B1_firefighter",
 
-
-			"RB205_B_B1_firefighter"
+			"RB205_B_B1_jetpack",
+			"RB205_B_B1_firefighter",
+			"RB205_B_B1_jetpack_space"
 		};
 		weapons[] =
         {
@@ -155,7 +156,7 @@ class CfgVehicles
 	class RB205_B1_rocket: RB205_B1
 	{
 		displayName = "B1 Battle Droid [Rocket]";
-		backpack = "JLTS_B1_jetpack";
+		backpack = "RB205_B_B1_jetpack";
 	};
 
 	/****************
@@ -187,6 +188,12 @@ class CfgVehicles
 		{
 			MAG_XX(MAG_TP_AP,2)
 		};
+	};
+
+	class JLTS_B1_jetpack;
+	class RB205_B_B1_jetpack: JLTS_B1_jetpack
+	{
+		JETPACK_TRUE
 	};
 
 	#include "geonosis.hpp"

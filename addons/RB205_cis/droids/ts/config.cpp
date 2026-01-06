@@ -128,8 +128,8 @@ class CfgVehicles
 			ITEM_XX(RB205_tseries_head, 1)
 		};
 
-		editorCategory = "RB205_prop";
-		editorSubcategory = "RB205_other";
+		editorCategory = "3AS_EditorCategory_MiscProps";
+		editorSubcategory = "3AS_EditorSubcategory_Intel";
 		scope = 2;
 		scopecurator = 2;
 		model = "\kobra\442_misc\t_series\t_series_head.p3d";

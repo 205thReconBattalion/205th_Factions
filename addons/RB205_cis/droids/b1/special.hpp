@@ -4,7 +4,7 @@ class RB205_B1_space: RB205_B1
 {
 	displayName = "B1 Battle Droid [Space]";
 	uniformClass = "JLTS_DroidB1_Rocket";
-	backpack = "JLTS_B1_jetpack_Rocket";
+	backpack = "RB205_B_B1_jetpack_space";
 	SUBCATEGORY_SPECIAL
 };
 class RB205_B1_prototype: RB205_B1
@@ -66,4 +66,10 @@ class RB205_B_B1_firefighter: JLTS_B1_backpack
 {
 	displayName = "Battle droid backpack (firefighter)";
 	hiddenSelectionsTextures[] = {"\RB205_cis\droids\b1\data\b1_firefighter_backpack.paa"};
+};
+
+class JLTS_B1_jetpack_Rocket;
+class RB205_B_B1_jetpack_space: JLTS_B1_jetpack_Rocket
+{
+	JETPACK_TRUE
 };

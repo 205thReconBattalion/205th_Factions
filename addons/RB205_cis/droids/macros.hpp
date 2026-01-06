@@ -61,6 +61,24 @@
 #define BINO		"JLTS_DroidBinocular"
 #define BINO_BX		"SWLB_clone_commander_binocular_night"
 
+// JUMPPACK
+#define JETPACK_TRUE \
+    JLTS_isJumppack = 0; \
+	tas_is_jetpack = 0; \
+    NSMLLTE_jumppack_is_jumppack = 0; \
+	RD501_jumppack_is_jumppack = 0; \
+	knd_isJetpack = 0; \
+	jen_jetpacks_core_isJetpack = 1; \
+	jen_jetpacks_core_acceleration = 1.8; \
+	jen_jetpacks_core_ascensionCoef = 1; \
+	jen_jetpacks_core_coolCoef = 2; \
+	jen_jetpacks_core_fuelCapacity = 500; \
+	jen_jetpacks_core_fuelCoef = 1; \
+	jen_jetpacks_core_heatCoef = 3; \
+	jen_jetpacks_core_jumpCoef = 1; \
+	jen_jetpacks_core_drag = 4; \
+	jen_jetpacks_core_strafeCoef = 0.3;
+
 //macros for droid footsteps
 #define DROID_SOUNDS \
 class SoundEnvironExt \
