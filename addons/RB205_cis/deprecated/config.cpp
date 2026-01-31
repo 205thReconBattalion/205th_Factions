@@ -52,7 +52,6 @@ class CfgVehicles
 
 	class RB205_B2;
 	class RB205_B2_rocket;
-	class RB205_B2_unarmed;
 
 	class RB205_BX;
 	class RB205_BX_heavy;
@@ -64,8 +63,6 @@ class CfgVehicles
 	class RB205_BX_captain;
 	class RB205_BX_security;
 	class RB205_B1_diplomat;
-	class RB205_BX_melee;
-	class RB205_BX_captain_melee;
 
 	class RB205_BX_training;
 	class RB205_BX_heavy_training;
@@ -74,7 +71,6 @@ class CfgVehicles
 	class RB205_BX_aa_training;
 	class RB205_BX_ap_training;
 	class RB205_BX_shield_training;
-	class RB205_BX_melee_training;
 
 	class RB205_TS;
 	class RB205_TS_green;
@@ -110,7 +106,6 @@ class CfgVehicles
 
 	class RB205_droideka;
 	class RB205_droideka_sniper;
-	class RB205_droideka_heavy;
 	class RB205_crab;
 	class RB205_OG9;
 	class RB205_flak;
@@ -128,7 +123,12 @@ class CfgVehicles
 	class RB205_flitknot;
 	class RB205_flitknot_bx;
 	class RB205_flitknot_bx_sniper;
-	
+
+	DPRC(RB205_BX_melee,RB205_BX)
+	DPRC(RB205_BX_captain_melee,RB205_BX)
+	DPRC(RB205_BX_melee_training,RB205_BX)
+	DPRC(RB205_B2_unarmed,RB205_B2)
+	DPRC(RB205_droideka_heavy,RB205_droideka)
 
 	DPRC(205_B1,RB205_B1)
 	DPRC(205_B1_commander,RB205_B1_commander)

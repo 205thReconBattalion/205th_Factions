@@ -41,11 +41,13 @@
 #define WEAPON_E5S 	"RB205_E5S"
 #define MAG_E5S 	"RB205_E5S_mag"
 
-#define WEAPON_B2 	"RB205_B2_wristBlaster"
-#define MAG_B2 		"RB205_B2_mag"
+#define WEAPON_B2 	"WBK_B2_Weapon"
+#define MAG_B2 		"ls_magazine_e5"
 
 #define WEAPON_RG4D "RB205_RG4D"
 #define MAG_RG4D	"RB205_RG4D_mag"
+
+#define WEAPON_VIBRO "wbk_vibroblade_new"
 
 #define WEAPON_AT	"RB205_RPS6_CIS"
 #define WEAPON_AA	"RB205_E60R"
@@ -64,11 +66,11 @@
 // JUMPPACK
 #define JETPACK_TRUE \
     JLTS_isJumppack = 0; \
-	tas_is_jetpack = 0; \
+	tas_is_jetpack = 1; \
     NSMLLTE_jumppack_is_jumppack = 0; \
 	RD501_jumppack_is_jumppack = 0; \
 	knd_isJetpack = 0; \
-	jen_jetpacks_core_isJetpack = 1; \
+	jen_jetpacks_core_isJetpack = 0; \
 	jen_jetpacks_core_acceleration = 1.8; \
 	jen_jetpacks_core_ascensionCoef = 1; \
 	jen_jetpacks_core_coolCoef = 2; \
@@ -79,139 +81,137 @@
 	jen_jetpacks_core_drag = 4; \
 	jen_jetpacks_core_strafeCoef = 0.3;
 
-//macros for droid footsteps
+// DROID EFFECTS
+#define DROID_EFFECTS \
+	impactEffectsBlood = "ImpactMetal"; \
+	impactEffectsNoBlood = "ImpactMetal"; \
+	impactEffectsSea = "ImpactMetal"; \
+	canBleed = 0;
+
+// FOOTSTEP SOUNDS
 #define DROID_SOUNDS \
-class SoundEnvironExt \
-{ \
-	generic[] = \
-	{ \
-		{"run", {"\WebKnightsRobotics\sounds\dirt1.wav", 2, 1, 30}}, \
-		{"run", {"\WebKnightsRobotics\sounds\dirt2.wav", 2, 1, 30}}, \
-		{"run", {"\WebKnightsRobotics\sounds\dirt3.wav", 2, 1, 30}}, \
-		{"run", {"\WebKnightsRobotics\sounds\dirt4.wav", 2, 1, 30}}, \
-		{"walk", {"\WebKnightsRobotics\sounds\dirt1.wav", 2, 1, 15}}, \
-		{"walk", {"\WebKnightsRobotics\sounds\dirt2.wav", 2, 1, 15}}, \
-		{"walk", {"\WebKnightsRobotics\sounds\dirt3.wav", 2, 1, 15}}, \
-		{"walk", {"\WebKnightsRobotics\sounds\dirt4.wav", 2, 1, 15}}, \
-		{"sprint", {"\WebKnightsRobotics\sounds\dirt1.wav", 2, 1, 45}}, \
-		{"sprint", {"\WebKnightsRobotics\sounds\dirt2.wav", 2, 1, 45}}, \
-		{"sprint", {"\WebKnightsRobotics\sounds\dirt3.wav", 2, 1, 45}}, \
-		{"sprint", {"\WebKnightsRobotics\sounds\dirt4.wav", 2, 1, 45}}, \
-		{"Tactical", {"\WebKnightsRobotics\sounds\dirt1.wav", 2, 1, 15}}, \
-		{"Tactical", {"\WebKnightsRobotics\sounds\dirt2.wav", 2, 1, 15}}, \
-		{"Tactical", {"\WebKnightsRobotics\sounds\dirt3.wav", 2, 1, 15}}, \
-		{"Tactical", {"\WebKnightsRobotics\sounds\dirt4.wav", 2, 1, 15}} \
+	class SoundEnvironExt { \
+		generic[] = { \
+			{"run", {"\WBK_Droids\sounds\b1\dirt1.wav", 2, 1, 30}}, \
+			{"run", {"\WBK_Droids\sounds\b1\dirt2.wav", 2, 1, 30}}, \
+			{"run", {"\WBK_Droids\sounds\b1\dirt3.wav", 2, 1, 30}}, \
+			{"run", {"\WBK_Droids\sounds\b1\dirt4.wav", 2, 1, 30}}, \
+			{"walk", {"\WBK_Droids\sounds\b1\dirt1.wav", 2, 1, 15}}, \
+			{"walk", {"\WBK_Droids\sounds\b1\dirt2.wav", 2, 1, 15}}, \
+			{"walk", {"\WBK_Droids\sounds\b1\dirt3.wav", 2, 1, 15}}, \
+			{"walk", {"\WBK_Droids\sounds\b1\dirt4.wav", 2, 1, 15}}, \
+			{"sprint", {"\WBK_Droids\sounds\b1\dirt1.wav", 2, 1, 45}}, \
+			{"sprint", {"\WBK_Droids\sounds\b1\dirt2.wav", 2, 1, 45}}, \
+			{"sprint", {"\WBK_Droids\sounds\b1\dirt3.wav", 2, 1, 45}}, \
+			{"sprint", {"\WBK_Droids\sounds\b1\dirt4.wav", 2, 1, 45}}, \
+			{"Tactical", {"\WBK_Droids\sounds\b1\dirt1.wav", 2, 1, 15}}, \
+			{"Tactical", {"\WBK_Droids\sounds\b1\dirt2.wav", 2, 1, 15}}, \
+			{"Tactical", {"\WBK_Droids\sounds\b1\dirt3.wav", 2, 1, 15}}, \
+			{"Tactical", {"\WBK_Droids\sounds\b1\dirt4.wav", 2, 1, 15}} \
+		}; \
 	}; \
-}; \
-class SoundEquipment \
-{ \
-	soldier[] = \
-	{ \
-		{"run", {"\WebKnightsRobotics\sounds\dirt1.wav", 2, 1, 30}}, \
-		{"run", {"\WebKnightsRobotics\sounds\dirt2.wav", 2, 1, 30}}, \
-		{"run", {"\WebKnightsRobotics\sounds\dirt3.wav", 2, 1, 30}}, \
-		{"run", {"\WebKnightsRobotics\sounds\dirt4.wav", 2, 1, 30}}, \
-		{"walk", {"\WebKnightsRobotics\sounds\dirt1.wav", 2, 1, 15}}, \
-		{"walk", {"\WebKnightsRobotics\sounds\dirt2.wav", 2, 1, 15}}, \
-		{"walk", {"\WebKnightsRobotics\sounds\dirt3.wav", 2, 1, 15}}, \
-		{"walk", {"\WebKnightsRobotics\sounds\dirt4.wav", 2, 1, 15}}, \
-		{"sprint", {"\WebKnightsRobotics\sounds\dirt1.wav", 2, 1, 45}}, \
-		{"sprint", {"\WebKnightsRobotics\sounds\dirt2.wav", 2, 1, 45}}, \
-		{"sprint", {"\WebKnightsRobotics\sounds\dirt3.wav", 2, 1, 45}}, \
-		{"sprint", {"\WebKnightsRobotics\sounds\dirt4.wav", 2, 1, 45}}, \
-		{"Tactical", {"\WebKnightsRobotics\sounds\dirt1.wav", 2, 1, 15}}, \
-		{"Tactical", {"\WebKnightsRobotics\sounds\dirt2.wav", 2, 1, 15}}, \
-		{"Tactical", {"\WebKnightsRobotics\sounds\dirt3.wav", 2, 1, 15}}, \
-		{"Tactical", {"\WebKnightsRobotics\sounds\dirt4.wav", 2, 1, 15}} \
+	class SoundEquipment { \
+		soldier[] = { \
+			{"run", {"\WBK_Droids\sounds\b1\dirt1.wav", 2, 1, 30}}, \
+			{"run", {"\WBK_Droids\sounds\b1\dirt2.wav", 2, 1, 30}}, \
+			{"run", {"\WBK_Droids\sounds\b1\dirt3.wav", 2, 1, 30}}, \
+			{"run", {"\WBK_Droids\sounds\b1\dirt4.wav", 2, 1, 30}}, \
+			{"walk", {"\WBK_Droids\sounds\b1\dirt1.wav", 2, 1, 15}}, \
+			{"walk", {"\WBK_Droids\sounds\b1\dirt2.wav", 2, 1, 15}}, \
+			{"walk", {"\WBK_Droids\sounds\b1\dirt3.wav", 2, 1, 15}}, \
+			{"walk", {"\WBK_Droids\sounds\b1\dirt4.wav", 2, 1, 15}}, \
+			{"sprint", {"\WBK_Droids\sounds\b1\dirt1.wav", 2, 1, 45}}, \
+			{"sprint", {"\WBK_Droids\sounds\b1\dirt2.wav", 2, 1, 45}}, \
+			{"sprint", {"\WBK_Droids\sounds\b1\dirt3.wav", 2, 1, 45}}, \
+			{"sprint", {"\WBK_Droids\sounds\b1\dirt4.wav", 2, 1, 45}}, \
+			{"Tactical", {"\WBK_Droids\sounds\b1\dirt1.wav", 2, 1, 15}}, \
+			{"Tactical", {"\WBK_Droids\sounds\b1\dirt2.wav", 2, 1, 15}}, \
+			{"Tactical", {"\WBK_Droids\sounds\b1\dirt3.wav", 2, 1, 15}}, \
+			{"Tactical", {"\WBK_Droids\sounds\b1\dirt4.wav", 2, 1, 15}} \
+		}; \
 	}; \
-}; \
-class SoundBreath \
-{ \
-	breath[] = {}; \
-}; \
-class SoundDrown \
-{ \
-	breath[] = {}; \
-}; \
-class SoundInjured \
-{ \
-	breath[] = {}; \
-}; \
-class SoundBleeding \
-{ \
-	breath[] = {}; \
-}; \
-class SoundBurning \
-{ \
-	breath[] = {}; \
-}; \
-class SoundChoke \
-{ \
-	breath[] = {}; \
-}; \
-class SoundRecovered \
-{ \
-	breath[] = {}; \
-};
+	class SoundBreath { \
+		breath[] = {}; \
+	}; \
+	class SoundDrown { \
+		breath[] = {}; \
+	}; \
+	class SoundInjured { \
+		breath[] = {}; \
+	}; \
+	class SoundBleeding { \
+		breath[] = {}; \
+	}; \
+	class SoundBurning { \
+		breath[] = {}; \
+	}; \
+	class SoundChoke { \
+		breath[] = {}; \
+	}; \
+	class SoundRecovered { \
+		breath[] = {}; \
+	};
+
 
 #define DROID_SOUNDS_B2 \
-class SoundEnvironExt { \
-	generic[] = { \
-		{"walk", {"\WebKnightsRobotics\sounds\b2_step_1.ogg", 2, 1, 30}}, \
-		{"walk", {"\WebKnightsRobotics\sounds\b2_step_2.ogg", 2, 1, 30}}, \
-		{"walk", {"\WebKnightsRobotics\sounds\b2_step_3.ogg", 2, 1, 30}}, \
-		{"run", {"\WebKnightsRobotics\sounds\b2_step_1.ogg", 2, 1, 30}}, \
-		{"run", {"\WebKnightsRobotics\sounds\b2_step_2.ogg", 2, 1, 30}}, \
-		{"run", {"\WebKnightsRobotics\sounds\b2_step_3.ogg", 2, 1, 30}}, \
-		{"sprint", {"\WebKnightsRobotics\sounds\b2_step_1.ogg", 2, 1, 30}}, \
-		{"sprint", {"\WebKnightsRobotics\sounds\b2_step_2.ogg", 2, 1, 30}}, \
-		{"sprint", {"\WebKnightsRobotics\sounds\b2_step_3.ogg", 2, 1, 30}}, \
-		{"Tactical", {"\WebKnightsRobotics\sounds\b2_step_1.ogg", 2, 1, 30}}, \
-		{"Tactical", {"\WebKnightsRobotics\sounds\b2_step_2.ogg", 2, 1, 30}}, \
-		{"Tactical", {"\WebKnightsRobotics\sounds\b2_step_3.ogg", 2, 1, 30}} \
+	class SoundEnvironExt { \
+		generic[] = { \
+			{"run", {"\WBK_Droids\sounds\b2\b2_step_1.ogg", 2, 1, 30}}, \
+			{"run", {"\WBK_Droids\sounds\b2\b2_step_2.ogg", 2, 1, 30}}, \
+			{"run", {"\WBK_Droids\sounds\b2\b2_step_3.ogg", 2, 1, 30}}, \
+			{"run", {"\WBK_Droids\sounds\b2\b2_step_1.ogg", 2, 1, 30}}, \
+			{"walk", {"\WBK_Droids\sounds\b2\b2_step_1.ogg", 2, 1, 15}}, \
+			{"walk", {"\WBK_Droids\sounds\b2\b2_step_2.ogg", 2, 1, 15}}, \
+			{"walk", {"\WBK_Droids\sounds\b2\b2_step_3.ogg", 2, 1, 15}}, \
+			{"walk", {"\WBK_Droids\sounds\b2\b2_step_1.ogg", 2, 1, 15}}, \
+			{"sprint", {"\WBK_Droids\sounds\b2\b2_step_1.ogg", 2, 1, 45}}, \
+			{"sprint", {"\WBK_Droids\sounds\b2\b2_step_2.ogg", 2, 1, 45}}, \
+			{"sprint", {"\WBK_Droids\sounds\b2\b2_step_3.ogg", 2, 1, 45}}, \
+			{"sprint", {"\WBK_Droids\sounds\b2\b2_step_1.ogg", 2, 1, 45}}, \
+			{"Tactical", {"\WBK_Droids\sounds\b2\b2_step_1.ogg", 2, 1, 15}}, \
+			{"Tactical", {"\WBK_Droids\sounds\b2\b2_step_2.ogg", 2, 1, 15}}, \
+			{"Tactical", {"\WBK_Droids\sounds\b2\b2_step_3.ogg", 2, 1, 15}}, \
+			{"Tactical", {"\WBK_Droids\sounds\b2\b2_step_1.ogg", 2, 1, 15}} \
+		}; \
 	}; \
-}; \
-class SoundEquipment { \
-	soldier[] = { \
-		{"walk", {"\WebKnightsRobotics\sounds\b2_step_1.ogg", 2, 1, 30}}, \
-		{"walk", {"\WebKnightsRobotics\sounds\b2_step_2.ogg", 2, 1, 30}}, \
-		{"walk", {"\WebKnightsRobotics\sounds\b2_step_3.ogg", 2, 1, 30}}, \
-		{"run", {"\WebKnightsRobotics\sounds\b2_step_1.ogg", 2, 1, 30}}, \
-		{"run", {"\WebKnightsRobotics\sounds\b2_step_2.ogg", 2, 1, 30}}, \
-		{"run", {"\WebKnightsRobotics\sounds\b2_step_3.ogg", 2, 1, 30}}, \
-		{"sprint", {"\WebKnightsRobotics\sounds\b2_step_1.ogg", 2, 1, 30}}, \
-		{"sprint", {"\WebKnightsRobotics\sounds\b2_step_2.ogg", 2, 1, 30}}, \
-		{"sprint", {"\WebKnightsRobotics\sounds\b2_step_3.ogg", 2, 1, 30}}, \
-		{"Tactical", {"\WebKnightsRobotics\sounds\b2_step_1.ogg", 2, 1, 30}}, \
-		{"Tactical", {"\WebKnightsRobotics\sounds\b2_step_2.ogg", 2, 1, 30}}, \
-		{"Tactical", {"\WebKnightsRobotics\sounds\b2_step_3.ogg", 2, 1, 30}} \
+	class SoundEquipment { \
+		soldier[] = { \
+			{"run", {"\WBK_Droids\sounds\b2\b2_step_1.ogg", 2, 1, 30}}, \
+			{"run", {"\WBK_Droids\sounds\b2\b2_step_2.ogg", 2, 1, 30}}, \
+			{"run", {"\WBK_Droids\sounds\b2\b2_step_3.ogg", 2, 1, 30}}, \
+			{"run", {"\WBK_Droids\sounds\b2\b2_step_1.ogg", 2, 1, 30}}, \
+			{"walk", {"\WBK_Droids\sounds\b2\b2_step_1.ogg", 2, 1, 15}}, \
+			{"walk", {"\WBK_Droids\sounds\b2\b2_step_2.ogg", 2, 1, 15}}, \
+			{"walk", {"\WBK_Droids\sounds\b2\b2_step_3.ogg", 2, 1, 15}}, \
+			{"walk", {"\WBK_Droids\sounds\b2\b2_step_1.ogg", 2, 1, 15}}, \
+			{"sprint", {"\WBK_Droids\sounds\b2\b2_step_1.ogg", 2, 1, 45}}, \
+			{"sprint", {"\WBK_Droids\sounds\b2\b2_step_2.ogg", 2, 1, 45}}, \
+			{"sprint", {"\WBK_Droids\sounds\b2\b2_step_3.ogg", 2, 1, 45}}, \
+			{"sprint", {"\WBK_Droids\sounds\b2\b2_step_1.ogg", 2, 1, 45}}, \
+			{"Tactical", {"\WBK_Droids\sounds\b2\b2_step_1.ogg", 2, 1, 15}}, \
+			{"Tactical", {"\WBK_Droids\sounds\b2\b2_step_2.ogg", 2, 1, 15}}, \
+			{"Tactical", {"\WBK_Droids\sounds\b2\b2_step_3.ogg", 2, 1, 15}}, \
+			{"Tactical", {"\WBK_Droids\sounds\b2\b2_step_1.ogg", 2, 1, 15}} \
+		}; \
 	}; \
-}; \
-class SoundBreath \
-{ \
-	breath[] = {}; \
-}; \
-class SoundDrown \
-{ \
-	breath[] = {}; \
-}; \
-class SoundInjured \
-{ \
-	breath[] = {}; \
-}; \
-class SoundBleeding \
-{ \
-	breath[] = {}; \
-}; \
-class SoundBurning \
-{ \
-	breath[] = {}; \
-}; \
-class SoundChoke \
-{ \
-	breath[] = {}; \
-}; \
-class SoundRecovered \
-{ \
-	breath[] = {}; \
-};
+	class SoundBreath { \
+		breath[] = {}; \
+	}; \
+	class SoundDrown { \
+		breath[] = {}; \
+	}; \
+	class SoundInjured { \
+		breath[] = {}; \
+	}; \
+	class SoundBleeding { \
+		breath[] = {}; \
+	}; \
+	class SoundBurning { \
+		breath[] = {}; \
+	}; \
+	class SoundChoke { \
+		breath[] = {}; \
+	}; \
+	class SoundRecovered { \
+		breath[] = {}; \
+	};

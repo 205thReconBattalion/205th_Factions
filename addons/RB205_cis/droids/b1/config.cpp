@@ -76,9 +76,7 @@ class CfgVehicles
 		respawnlinkedItems[]=   { "JLTS_NVG_droid_chip_1", "ItemMap", "ItemGPS", "JLTS_droid_comlink", "ItemCompass", "ItemWatch" };
 		items[]=            {};
 		respawnItems[]=     {};
-		canBleed = 0;
-		impactEffectsBlood = "ImpactMetal";
-		impactEffectsNoBlood = "ImpactPlastic";
+		DROID_EFFECTS
 		DROID_SOUNDS
 	};
 	class RB205_B1_heavy: RB205_B1

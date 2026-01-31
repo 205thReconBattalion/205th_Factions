@@ -12,13 +12,13 @@ class RB205_droideka_sniper: 3as_Deka_Static_Sniper
     editorSubCategory = "RB205_cis_turret";
     displayName = "[DEKA|S] Droideka (Sniper)";
 };
-class k_CIS_Droideka;
+/*class k_CIS_Droideka;
 class RB205_droideka_heavy: k_CIS_Droideka
 {
     faction = "RB205_cis";
     editorSubCategory = "RB205_cis_turret";
     displayName = "[DEKA] Droideka (Explosive)";
-};
+};*/
 
 class Aux212_Crab_Droid_Light_Static;
 class RB205_crab: Aux212_Crab_Droid_Light_Static

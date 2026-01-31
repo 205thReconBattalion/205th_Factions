@@ -12,7 +12,8 @@ class cfgPatches
             "JLTS_weapons_E60R",
             "3AS_Weapons",
             "3AS_Weapons_E5",
-            "3AS_Weapons_DWBlaster"
+            "3AS_Weapons_DWBlaster",
+            "WBK_Droids_LS"
         };
 		requiredVersion = 1.0;
 		units[] = {};
@@ -187,12 +188,16 @@ class CfgWeapons
     {
         class Single: Mode_SemiAuto {};
     };
-
+    /*class ls_weapon_e5_base;
+    class ls_weapon_e5: ls_weapon_e5_base
+    {
+        class Single: Mode_SemiAuto {};
+    };*/
     class RB205_B2_wristBlaster: 3AS_E5_F
     {
         displayName = "[CIS] B2 Wrist Blaster";
         picture = "\3AS\3AS_Weapons\DWBlaster\Data\UI\3as_b2arm.paa";
-        model="WebKnightsRobotics\WBK_b2_weap.p3d";
+        model="WBK_Droids\compat_ls\WBK_b2_weap.p3d";
         magazines[] =
         {
             "RB205_B2_mag"
@@ -358,7 +363,7 @@ class CfgAmmo
         hit = 30;
         caliber = 3.79;
         explosionSoundEffect = "DefaultExplosion";
-        model = "kobra\442_turrets\Droideka\Doublelaserred.p3d";
+        //model = "kobra\442_turrets\Droideka\Doublelaserred.p3d";
         class CamShakeExplode
         {
             power="(20*0.2)";

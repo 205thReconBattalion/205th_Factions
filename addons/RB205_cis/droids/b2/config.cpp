@@ -7,15 +7,13 @@ class cfgPatches
 		{
 			"RB205_cis_droids",
             "ls_characters_droid",
-			"WBK_DifferentRobotics_1"
+			"WBK_Droids_LS"
 		};
 		requiredVersion = 1.0;
 		units[] =
 		{
 			"RB205_B2",
 			"RB205_B2_rocket",
-			"RB205_B2_unarmed",
-
 
 			"RB205_B2_jetpack"
 		};
@@ -30,15 +28,13 @@ class cfgPatches
 
 class CfgVehicles
 {
-	class WBK_B2_Mod_Standart;
     class ls_droid_b2;
 
-	class RB205_B2: WBK_B2_Mod_Standart
+	class RB205_B2: ls_droid_b2
 	{
 		displayName = "B2 Super Battle Droid";
 		ICON_DEFAULT
 		uniformClass = "RB205_U_B2";
-		//hidden
 		backpack = "";
 		weapons[]=          { WEAPON_B2, "Throw", "Put" };
 		respawnWeapons[]=   { WEAPON_B2, "Throw", "Put" };
@@ -51,38 +47,14 @@ class CfgVehicles
 		respawnlinkedItems[]=   { "JLTS_NVG_droid_chip_1", "ItemMap", "ItemGPS", "JLTS_droid_comlink", "ItemCompass", "ItemWatch" };
 		items[]=            {};
 		respawnItems[]=     {};
-		canBleed = 0;
-		impactEffectsBlood = "ImpactMetal";
-		impactEffectsNoBlood = "ImpactPlastic";
+		DROID_EFFECTS
 		DROID_SOUNDS_B2
+		_generalMacro = "WBK_AI_StarWars_Droids";
 	};
 	class RB205_B2_rocket: RB205_B2
 	{
 		displayName = "B2 Super Battle Droid (Rocket)";
 		backpack = "RB205_B2_jetpack";
-	};
-
-	class RB205_B2_unarmed: ls_droid_b2
-	{
-		displayName = "B2 Super Battle Droid (Unarmed)";
-		ICON_DEFAULT
-		uniformClass = "RB205_U_B2";
-		backpack = "";
-		weapons[]=          { "Throw", "Put" };
-		respawnWeapons[]=   { "Throw", "Put" };
-		magazines[]=        { };
-		respawnMagazines[]= { };
-
-		faction = "RB205_cis";
-		editorSubcategory = "RB205_cis_b2";
-		linkedItems[]=          { "JLTS_NVG_droid_chip_1", "ItemMap", "ItemGPS", "JLTS_droid_comlink", "ItemCompass", "ItemWatch" };
-		respawnlinkedItems[]=   { "JLTS_NVG_droid_chip_1", "ItemMap", "ItemGPS", "JLTS_droid_comlink", "ItemCompass", "ItemWatch" };
-		items[]=            {};
-		respawnItems[]=     {};
-		canBleed = 0;
-		impactEffectsBlood = "ImpactMetal";
-		impactEffectsNoBlood = "ImpactPlastic";
-		DROID_SOUNDS_B2
 	};
 
 	class JLTS_B1_jetpack;
@@ -112,4 +84,12 @@ class CfgWeapons
 			uniformClass = "RB205_B2";
 		};
 	};
+};
+
+class Extended_InitPost_EventHandlers {
+	class RB205_B2 {
+        class RB205_CIS_B2_WBK_Init {
+            init = "_unit = _this select 0; if (local _unit) then {_unit spawn WBK_Droid_B2_Load;};";
+        };
+    };
 };

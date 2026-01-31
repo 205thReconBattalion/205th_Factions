@@ -63,6 +63,8 @@ class CfgVehicles
 		respawnWeapons[]=   { WEAPON_E5, BINO, "Throw", "Put" };
 		magazines[]=        { MAG_8(MAG_E5) };
 		respawnMagazines[]= { MAG_8(MAG_E5) };
+		DROID_EFFECTS
+		DROID_SOUNDS
 	};
 	class RB205_TS_green: RB205_TS
 	{

@@ -36,8 +36,3 @@ class RB205_BX_shield_training: RB205_BX_shield
 	uniformClass = "RB205_U_BX_training";
 	SUBCATEGORY_TRAINING
 };
-class RB205_BX_melee_training: RB205_BX_melee
-{
-	uniformClass = "RB205_U_BX_training";
-	SUBCATEGORY_TRAINING
-};

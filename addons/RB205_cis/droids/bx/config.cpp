@@ -6,7 +6,8 @@ class cfgPatches
 		requiredAddons[] =
 		{
 			"RB205_cis_droids",
-            "ls_characters_droid"
+            "ls_characters_droid",
+			"WBK_Droids_LS"
 		};
 		requiredVersion = 1.0;
 		units[] =
@@ -21,8 +22,6 @@ class cfgPatches
 			"RB205_BX_captain",
 			"RB205_BX_security",
 			"RB205_BX_diplomat",
-			"RB205_BX_melee",
-			"RB205_BX_captain_melee",
 
 			"RB205_BX_training",
 			"RB205_BX_heavy_training",
@@ -31,7 +30,8 @@ class cfgPatches
 			"RB205_BX_aa_training",
 			"RB205_BX_ap_training",
 			"RB205_BX_shield_training",
-			"RB205_BX_melee_training",
+
+			"RB205_B_BX"
 		};
 		weapons[] =
         {
@@ -56,9 +56,9 @@ class CfgVehicles
 	{
 		displayName = "BX Commando Droid";
 		ICON_DEFAULT
-		backpack = "";
-		weapons[]=          { WEAPON_E5X, BINO_BX, "Throw", "Put" };
-		respawnWeapons[]=   { WEAPON_E5X, BINO_BX, "Throw", "Put" };
+		backpack = "RB205_B_BX";
+		weapons[]=          { WEAPON_E5X, WEAPON_VIBRO, BINO_BX, "Throw", "Put" };
+		respawnWeapons[]=   { WEAPON_E5X, WEAPON_VIBRO, BINO_BX, "Throw", "Put" };
 		magazines[]=        { MAG_8(MAG_E5X) };
 		respawnMagazines[]= { MAG_8(MAG_E5X) };
 
@@ -70,17 +70,15 @@ class CfgVehicles
 		respawnlinkedItems[]=   { "RB205_V_BX", "JLTS_NVG_droid_chip_2", "ItemMap", "ItemGPS", "JLTS_droid_comlink", "ItemCompass", "ItemWatch" };
 		items[]=            {};
 		respawnItems[]=     {};
-		canBleed = 0;
-		impactEffectsBlood = "ImpactMetal";
-		impactEffectsNoBlood = "ImpactPlastic";
+		DROID_EFFECTS
 		DROID_SOUNDS
 	};
 	class RB205_BX_heavy: RB205_BX
 	{
 		displayName = "BX Commando Droid (Heavy)";
 		ICON_HEAVY
-		weapons[]=          { WEAPON_E5C, BINO_BX, "Throw", "Put" };
-		respawnWeapons[]=   { WEAPON_E5C, BINO_BX, "Throw", "Put" };
+		weapons[]=          { WEAPON_E5C, WEAPON_VIBRO, BINO_BX, "Throw", "Put" };
+		respawnWeapons[]=   { WEAPON_E5C, WEAPON_VIBRO, BINO_BX, "Throw", "Put" };
 		magazines[]=        { MAG_8(MAG_E5C), GRENADE };
 		respawnMagazines[]= { MAG_8(MAG_E5C), GRENADE };
 	};
@@ -126,8 +124,8 @@ class CfgVehicles
 	class RB205_BX_shield: RB205_BX
 	{
 		displayName = "BX Commando Droid (Shield)";
-		weapons[]=          { WEAPON_E5X_SHIELD, BINO_BX, "Throw", "Put" };
-		respawnWeapons[]=   { WEAPON_E5X_SHIELD, BINO_BX, "Throw", "Put" };
+		weapons[]=          { WEAPON_E5X_SHIELD, WEAPON_VIBRO, BINO_BX, "Throw", "Put" };
+		respawnWeapons[]=   { WEAPON_E5X_SHIELD, WEAPON_VIBRO, BINO_BX, "Throw", "Put" };
 		magazines[]=        { MAG_8(MAG_E5X) };
 		respawnMagazines[]= { MAG_8(MAG_E5X) };
 	};
@@ -150,36 +148,6 @@ class CfgVehicles
 		displayName = "BX Commando Droid [Diplomat]";
 		uniformClass = "RB205_U_BX_diplomant";
 		hiddenSelectionsTextures[] = {"\ls\core\addons\characters_droid\uniforms\bx\data\diplomat_body_co.paa"};
-	};
-
-	class WBK_BX_Assasin_1;
-	class RB205_BX_melee: WBK_BX_Assasin_1
-	{
-		displayName = "BX Commando Droid (Melee)";
-		ICON_DEFAULT
-		backpack = "";
-		weapons[]=          { WEAPON_E5X, WBK_Dutch_Vibro, "Throw", "Put" };
-		respawnWeapons[]=   { WEAPON_E5X, WBK_Dutch_Vibro, "Throw", "Put" };
-		magazines[]=        { MAG_8(MAG_E5X), WBK_Cybercrystal };
-		respawnMagazines[]= { MAG_8(MAG_E5X), WBK_Cybercrystal };
-
-		uniformClass = "RB205_U_BX";
-		faction = "RB205_cis";
-		editorSubcategory = "RB205_cis_bx";
-		linkedItems[]=          { "RB205_V_BX", "JLTS_NVG_droid_chip_2", "ItemMap", "ItemGPS", "JLTS_droid_comlink", "ItemCompass", "ItemWatch" };
-		respawnlinkedItems[]=   { "RB205_V_BX", "JLTS_NVG_droid_chip_2", "ItemMap", "ItemGPS", "JLTS_droid_comlink", "ItemCompass", "ItemWatch" };
-		items[]=            {};
-		respawnItems[]=     {};
-		canBleed = 0;
-		impactEffectsBlood = "ImpactMetal";
-		impactEffectsNoBlood = "ImpactPlastic";
-		DROID_SOUNDS
-	};
-	class RB205_BX_captain_melee: RB205_BX_melee
-	{
-		displayName = "BX Commando Droid [Captain] (Melee)";
-		ICON_OFFICER
-		uniformClass = "RB205_U_BX_captain";
 	};
 
 	/****************
@@ -316,4 +284,12 @@ class CfgWeapons
 			uniformClass = "RB205_BX_training";
 		};
 	};
+};
+
+class Extended_InitPost_EventHandlers {
+	class RB205_BX {
+        class RB205_CIS_BX_WBK_Init {
+            init = "_unit = _this select 0; if (local _unit) then {_unit spawn WBK_Droid_BX_Load;};";
+        };
+    };
 };
