@@ -85,6 +85,7 @@ class CfgVehicles
 		editorSubCategory = "RB205_lore_other";
 		linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","ItemRadio","JLTS_NVG_droid_chip_2"};
 		respawnLinkedItems[] = {"ItemMap","ItemCompass","ItemWatch","ItemRadio","JLTS_NVG_droid_chip_2"};
+		DROID_EFFECTS
 		DROID_SOUNDS
 	};
 };
