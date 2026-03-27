@@ -28,4 +28,12 @@ class CfgEditorSubcategories
 	{
 		displayName = "Insects";
 	};
+	class RB205_creatures_infected_clones
+	{
+		displayName = "Infected Clones";
+	};
+	class RB205_creatures_infected_civ
+	{
+		displayName = "Infected Civilians";
+	};
 };

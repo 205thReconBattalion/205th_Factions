@@ -9,7 +9,9 @@ class cfgPatches
         };
         skipWhenMissingDependencies = 1;
 		requiredVersion = 1.0;
-		units[] = {};
+		units[] = {
+			"RB205_creature_terentatek"
+		};
 		weapons[] = {};
 	};
 };
@@ -18,11 +20,10 @@ class cfgPatches
 
 class CfgVehicles
 {
-	class WBK_Goliaph_1;
-	class WBK_Goliaph_2: WBK_Goliaph_1
+	class WBK_Goliaph_2;
+	class RB205_creature_terentatek: WBK_Goliaph_2
 	{
 		displayName = "Terentatek";
-
 		faction = FACTION_CREATURES;
 		editorSubcategory = SUBCATEGORY_PREDATOR;
 	};

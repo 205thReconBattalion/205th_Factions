@@ -9,7 +9,11 @@ class cfgPatches
         };
         skipWhenMissingDependencies = 1;
 		requiredVersion = 1.0;
-		units[] = {};
+		units[] = {
+			"RB205_creature_gundark",
+			"RB205_creature_gundark_fire",
+			"RB205_creature_gundark_acid"
+		};
 		weapons[] = {};
 	};
 };
@@ -18,25 +22,26 @@ class cfgPatches
 
 class CfgVehicles
 {
-	class WBK_C_ExportClass;
-	class WBK_SpecialZombie_Smasher_1: WBK_C_ExportClass
+	class WBK_SpecialZombie_Smasher_1;
+	class RB205_creature_gundark: WBK_SpecialZombie_Smasher_1
 	{
 		displayName = "Gundark";
+		faction = FACTION_CREATURES;
+		editorSubcategory = SUBCATEGORY_PREDATOR;
+	};
 
+	class WBK_SpecialZombie_Smasher_Hellbeast_1;
+	class RB205_creature_gundark_fire: WBK_SpecialZombie_Smasher_Hellbeast_1
+	{
+		displayName = "Gundark (Fire)";
 		faction = FACTION_CREATURES;
 		editorSubcategory = SUBCATEGORY_PREDATOR;
 	};
-	class WBK_SpecialZombie_Smasher_Hellbeast_1: WBK_SpecialZombie_Smasher_1
+
+	class WBK_SpecialZombie_Smasher_Acid_1;
+	class RB205_creature_gundark_acid: WBK_SpecialZombie_Smasher_Acid_1
 	{
-		displayName = "Gundark (Hellspawn)";
-		
-		faction = FACTION_CREATURES;
-		editorSubcategory = SUBCATEGORY_PREDATOR;
-	};
-	class WBK_SpecialZombie_Smasher_Acid_1: WBK_SpecialZombie_Smasher_1
-	{
-		displayName = "Gundark (Acid Spewer)";
-		
+		displayName = "Gundark (Acid)";
 		faction = FACTION_CREATURES;
 		editorSubcategory = SUBCATEGORY_PREDATOR;
 	};

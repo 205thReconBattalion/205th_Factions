@@ -1,19 +1,16 @@
 class cfgPatches
 {
-	class RB205_factions_poly_smasher
+	class RB205_factions_guls_rancor
 	{
 		requiredAddons[] =
         {
 			"RB205_factions_creatures",
-            "WBK_Zombies_Smasher",
-            "P_SmasherSkins"
+            "GULS_Rancor"
         };
         skipWhenMissingDependencies = 1;
 		requiredVersion = 1.0;
 		units[] = {
-			"P_Smasher_Snow_1",
-			"P_Smasher_Snow_2",
-			"P_Smasher_Snow_3"
+			"RB205_creature_rancor"
 		};
 		weapons[] = {};
 	};
@@ -23,12 +20,10 @@ class cfgPatches
 
 class CfgVehicles
 {
-	class P_Smasher_Snow;
-	class P_Smasher_Snow_2: P_Smasher_Snow
+	class Rancor1;
+	class RB205_creature_rancor: Rancor1 //Independent
 	{
-		displayName = "Gundark (Arctic)";
-
-		side = 2;
+		displayName = "Rancor";
 		faction = FACTION_CREATURES;
 		editorSubcategory = SUBCATEGORY_PREDATOR;
 	};
