@@ -87,6 +87,7 @@ class cfgPatches
             "RB205_emp_V_death_lead3",
 
             "RB205_emp_V_navy_ensign",
+            "RB205_emp_V_navy_juniorLieutenant",
             "RB205_emp_V_navy_lieutenant",
             "RB205_emp_V_navy_seniorLieutenant",
             "RB205_emp_V_navy_captain",
@@ -169,6 +170,7 @@ class cfgPatches
             "RB205_emp_death_trooper_commander",
 
             "RB205_emp_navy_ensign",
+            "RB205_emp_navy_juniorLieutenant",
             "RB205_emp_navy_lieutenant",
             "RB205_emp_navy_seniorLieutenant",
             "RB205_emp_navy_captain",
@@ -1015,6 +1017,19 @@ class cfgWeapons
         class ItemInfo: ItemInfo
         {
             uniformmodel = "\JMSLLTE_empire_m\vests\of_rank_attend.p3d";
+            hiddenSelections[] = {"Camo1"};
+        };
+    };
+    class RB205_emp_V_navy_juniorLieutenant: RB205_vest_base
+    {
+        ACCESS_TRUE
+        displayName = "[205|EMP] Navy Insignia Plaque (Jr. Lt.)";
+        model = "\JMSLLTE_empire_m\vests\of_rank_nh_lt.p3d";
+        picture = "\JMSLLTE_empire\vests\ico\ico_v_ofLtAlt.paa";
+        hiddenSelections[] = {"camo"};
+        class ItemInfo: ItemInfo
+        {
+            uniformmodel = "\JMSLLTE_empire_m\vests\of_rank_nh_lt.p3d";
             hiddenSelections[] = {"Camo1"};
         };
     };
@@ -1935,6 +1950,12 @@ class cfgVehicles
         uniformClass = "RB205_emp_U_officer_grey";
         hiddenSelectionsTextures[] = {"JMSLLTE_empire\data\body\of_body_grey_co.paa"};
         LINKED_ITEMS("RB205_emp_H_officer_grey","RB205_emp_V_navy_ensign")
+    };
+    class RB205_emp_navy_juniorLieutenant: RB205_emp_navy_ensign
+    {
+        ACCESS_TRUE
+        displayName = "Navy Junior Lieutenant (Jr. Lt.)";
+        LINKED_ITEMS("RB205_emp_H_officer_grey","RB205_emp_V_navy_juniorLieutenant")
     };
     class RB205_emp_navy_lieutenant: RB205_emp_navy_ensign
     {

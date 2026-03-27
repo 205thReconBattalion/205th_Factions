@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="205RB">
+    <Package name="205_empire_weapons">
+<!--displayName weapons-->
+        <Key ID="STR_205_E11_DisplayName">
+            <English>[205|EMP] E-11 Blaster Rifle</English>
+            <German>[205|EMP] E-11 Blastergewehr</German>
+        </Key>
+        <Key ID="STR_205_E11_STOCK_DisplayName">
+            <English>[205|EMP] E-11 Blaster Rifle (Stock)</English>
+            <German>[205|EMP] E-11 Blastergewehr (Schaft)</German>
+        </Key>
+        <Key ID="STR_205_E11_GL_DisplayName">
+            <English>[205|EMP] E-11 GL Blaster Rifle (Stock)</English>
+            <German>[205|EMP] E-11 GL Blastergewehr (Schaft)</German>
+        </Key>
+        <Key ID="STR_205_DLT19_DisplayName">
+            <English>[205|EMP] DLT-19 Heavy Blaster Rifle</English>
+            <German>[205|EMP] DLT-19 Blastergewehr</German>
+        </Key>
+        <Key ID="STR_205_DLT19X_DisplayName">
+            <English>[205|EMP] DLT-19X Sniper Rifle</English>
+            <German>[205|EMP] DLT-19X Scharfschützengewehr</German>
+        </Key>
+        <Key ID="STR_205_E11D_DisplayName">
+            <English>[205|EMP] E-11D Blaster Carbine</English>
+            <German>[205|EMP] E-11D Blasterkarabiner</German>
+        </Key>
+        <Key ID="STR_205_SE14R_DisplayName">
+            <English>[205|EMP] SE-14r Light Repeating Blaster</English>
+            <German>[205|EMP] SE-14r Repetierblasterpistole</German>
+        </Key>
+        <Key ID="STR_205_RK3_DisplayName">
+            <English>[205|EMP] RK-3 Blaster Pistol</English>
+            <German>[205|EMP] RK-3 Blasterpistole</German>
+        </Key>
+        <Key ID="STR_205_EC17_DisplayName">
+            <English>[205|EMP] EC-17 Hold-Out Blaster</English>
+            <German>[205|EMP] EC-17 Miniblasterpistole</German>
+        </Key>
+<!--displayNameShort weapons-->
+        <Key ID="STR_205_E11_DisplayNameShort">
+            <English>E-11</English>
+            <German>E-11</German>
+        </Key>
+        <Key ID="STR_205_E11_GL_DisplayNameShort">
+            <English>E-11-GL</English>
+            <German>E-11-GL</German>
+        </Key>
+        <Key ID="STR_205_DLT19_DisplayNameShort">
+            <English>DLT-19</English>
+            <German>DLT-19</German>
+        </Key>
+        <Key ID="STR_205_DLT19X_DisplayNameShort">
+            <English>DLT-19X</English>
+            <German>DLT-19X</German>
+        </Key>
+        <Key ID="STR_205_E11D_DisplayNameShort">
+            <English>E-11D</English>
+            <German>E-11D</German>
+        </Key>
+        <Key ID="STR_205_SE14R_DisplayNameShort">
+            <English>SE-14r</English>
+            <German>SE-14r</German>
+        </Key>
+        <Key ID="STR_205_RK3_DisplayNameShort">
+            <English>RK-3</English>
+            <German>RK-3</German>
+        </Key>
+        <Key ID="STR_205_EC17_DisplayNameShort">
+            <English>EC-17</English>
+            <German>EC-17</German>
+        </Key>
+    </Package>
+</Project>

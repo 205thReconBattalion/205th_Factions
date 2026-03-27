@@ -1,6 +1,6 @@
 class cfgPatches
 {
-    class RB205_vehicles_empire
+    class RB205_empire_vehicles
 	{
 		requiredAddons[]=
 		{
