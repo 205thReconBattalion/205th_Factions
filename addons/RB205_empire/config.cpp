@@ -1462,13 +1462,11 @@ class cfgVehicles
         weapons[]=
         {
             "RB205_E11_wScope",
-            "RB205_emp_binocular",
             "Throw","Put"
         };
         respawnweapons[]=
         {
             "RB205_E11_wScope",
-            "RB205_emp_binocular",
             "Throw","Put"
         };
         magazines[]=
@@ -1683,13 +1681,11 @@ class cfgVehicles
         weapons[]=
         {
             "RB205_EC17_wScope",
-            "RB205_emp_binocular_scout",
             "Throw","Put"
         };
         respawnweapons[]=
         {
             "RB205_EC17_wScope",
-            "RB205_emp_binocular_scout",
             "Throw","Put"
         };
         magazines[]=
@@ -1870,14 +1866,12 @@ class cfgVehicles
         {
             "RB205_E11D",
             "RB205_SE14R",
-            "RB205_emp_binocular_scout",
             "Throw","Put"
         };
         respawnweapons[]=
         {
             "RB205_E11D",
             "RB205_SE14R",
-            "RB205_emp_binocular_scout",
             "Throw","Put"
         };
         magazines[]=
@@ -1920,13 +1914,11 @@ class cfgVehicles
         weapons[]=
         {
             "RB205_SE14R",
-            "RB205_emp_binocular_scout",
             "Throw","Put"
         };
         respawnweapons[]=
         {
             "RB205_SE14R",
-            "RB205_emp_binocular_scout",
             "Throw","Put"
         };
         magazines[]=
