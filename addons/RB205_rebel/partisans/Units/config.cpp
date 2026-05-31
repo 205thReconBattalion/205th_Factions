@@ -11,8 +11,8 @@ class CfgPatches
 		units[] = {
 			"RB205_partisan_squadLead",
 			"RB205_partisan_fighter",
-			"RB205_partisan_fighterAT",
-			"RB205_partisan_fighterAA",
+			"RB205_partisan_fighter_AT",
+			"RB205_partisan_fighter_AA",
 			"RB205_partisan_medic",
 			"RB205_partisan_fighter_heavy",
 			"RB205_partisan_fighter_sniper"
