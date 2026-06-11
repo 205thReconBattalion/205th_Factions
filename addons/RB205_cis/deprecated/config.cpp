@@ -16,6 +16,7 @@ class cfgPatches
 	class ##CLASS_OLD##: ##CLASS_NEW## \
 	{ \
 		scope = 1; \
+		scopeCurator = 1; \
 	};
 
 class CfgVehicles
@@ -106,6 +107,7 @@ class CfgVehicles
 
 	class RB205_droideka;
 	class RB205_droideka_sniper;
+	class RB205_deka;
 	class RB205_crab;
 	class RB205_OG9;
 	class RB205_flak;
@@ -235,6 +237,7 @@ class CfgVehicles
 	DPRC(205_droideka,RB205_droideka)
 	DPRC(205_droideka_sniper,RB205_droideka_sniper)
 	DPRC(205_droideka_heavy,RB205_droideka_heavy)
+	DPRC(RB295_deka,RB205_deka)
 	DPRC(205_crab,RB205_crab)
 	DPRC(205_OG9,RB205_OG9)
 	DPRC(205_flak,RB205_flak)

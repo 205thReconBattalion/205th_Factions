@@ -12,7 +12,8 @@ class cfgPatches
 		units[] =
 		{
 			"RB205_scavenger_droid",
-			"RB295_deka",
+			"RB205_deka",
+			"RB205_deka_noShield",
 			"RB205_dsd"
 		};
 		weapons[] = {};
@@ -31,8 +32,8 @@ class CfgVehicles
 		editorSubcategory = "RB205_cis_special";
 	};
 
-	class P_DroidekaMan;
-	class RB295_deka: P_DroidekaMan
+	class ls_droid_droideka;
+	class RB205_deka: ls_droid_droideka
 	{
 		displayName = "Droideka";
 		faction = "RB205_cis";
@@ -47,7 +48,23 @@ class CfgVehicles
 			"3AS_500Rnd_Droideka_RedPlasma","3AS_500Rnd_Droideka_RedPlasma","3AS_500Rnd_Droideka_RedPlasma",
 			"ShieldGrenadePersonal_Mag","ShieldGrenadePersonal_Mag","ShieldGrenadePersonal_Mag"
 		};
-		uniformClass = "RB205_U_deka";
+	};
+	class ls_droid_droideka_noShield;
+	class RB205_deka_noShield: ls_droid_droideka_noShield
+	{
+		displayName = "Droideka (No shield)";
+		faction = "RB205_cis";
+		editorSubcategory = "RB205_cis_special";
+		icon = "3AS\3AS_Deka\data\ui\Deka_top_ca.paa";
+		
+		weapons[] = {
+			"RB205_DEKA_WP",
+			"Throw","Put"
+		};
+		magazines[] = {
+			"3AS_500Rnd_Droideka_RedPlasma","3AS_500Rnd_Droideka_RedPlasma","3AS_500Rnd_Droideka_RedPlasma",
+			"3AS_500Rnd_Droideka_RedPlasma","3AS_500Rnd_Droideka_RedPlasma","3AS_500Rnd_Droideka_RedPlasma"
+		};
 	};
 
 	class P_DSD_Man;
@@ -74,20 +91,6 @@ class CfgVehicles
 
 class CfgWeapons
 {
-	class P_Droideka_UniBase;
-	class P_Droideka_Uni: P_Droideka_UniBase
-	{
-		class ItemInfo;
-	};
-	class RB205_U_deka: P_Droideka_Uni
-	{
-		class ItemInfo: ItemInfo
-		{
-			containerClass = "Supply500";
-			uniformClass = "RB295_deka";
-		};
-	};
-
 	class WM_DLT19;
 	class P_DroidekaRepeater: WM_DLT19
 	{

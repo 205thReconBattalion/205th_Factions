@@ -53,7 +53,6 @@ class cfgPatches
 
 			"RB205_droideka",
 			"RB205_droideka_sniper",
-			"RB205_droideka_heavy",
 			"RB205_crab",
 			"RB205_OG9",
 			"RB205_flak",
