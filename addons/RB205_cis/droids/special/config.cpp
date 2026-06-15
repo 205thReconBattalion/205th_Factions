@@ -13,7 +13,7 @@ class cfgPatches
 		{
 			"RB205_scavenger_droid",
 			"RB205_deka",
-			"RB205_deka_noShield",
+			"RB205_deka_zeus",
 			"RB205_dsd"
 		};
 		weapons[] = {};
@@ -32,8 +32,8 @@ class CfgVehicles
 		editorSubcategory = "RB205_cis_special";
 	};
 
-	class ls_droid_droideka;
-	class RB205_deka: ls_droid_droideka
+	class P_DroidekaMan;
+	class RB205_deka: P_DroidekaMan
 	{
 		displayName = "Droideka";
 		faction = "RB205_cis";
@@ -49,10 +49,10 @@ class CfgVehicles
 			"ShieldGrenadePersonal_Mag","ShieldGrenadePersonal_Mag","ShieldGrenadePersonal_Mag"
 		};
 	};
-	class ls_droid_droideka_noShield;
-	class RB205_deka_noShield: ls_droid_droideka_noShield
+	class ls_droid_droideka;
+	class RB205_deka_zeus: ls_droid_droideka
 	{
-		displayName = "Droideka (No shield)";
+		displayName = "Droideka [Zeus]";
 		faction = "RB205_cis";
 		editorSubcategory = "RB205_cis_special";
 		icon = "3AS\3AS_Deka\data\ui\Deka_top_ca.paa";
