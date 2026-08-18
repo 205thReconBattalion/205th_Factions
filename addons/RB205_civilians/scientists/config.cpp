@@ -74,7 +74,7 @@ class cfgVehicles
         hiddenSelectionsTextures[] = {"RB205_civilians\scientists\data\U_republic_scientist.paa"};
         
         identityTypes[] = {IDENTITY_TYPES_HUMAN,IDENTITY_TYPES_ALIEN};
-        Items[] = {"JLTS_intel_holoProjector","JLTS_intel_datacard","JLTS_intel_datapad_civ","JLTS_credit_card"};
+        Items[] = {"JLTS_intel_holoProjector","JLTS_intel_datacard","JLTS_intel_datapad_civ","JLTS_credit_card","JLTS_ids_rep_civ"};
         linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","ItemRadio"};
         respawnLinkedItems[] = {"ItemMap","ItemCompass","ItemWatch","ItemRadio"};
     };
@@ -115,7 +115,7 @@ class cfgVehicles
         };
         
         identityTypes[] = {IDENTITY_TYPES_HUMAN,IDENTITY_TYPES_ALIEN};
-        Items[] = {"JLTS_intel_holoProjector","JLTS_intel_datacard","JLTS_intel_datapad_civ","JLTS_credit_card"};
+        Items[] = {"JLTS_intel_holoProjector","JLTS_intel_datacard","JLTS_intel_datapad_civ","JLTS_credit_card","RB205_ids_cis_civ"};
         linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","ItemRadio"};
         respawnLinkedItems[] = {"ItemMap","ItemCompass","ItemWatch","ItemRadio"};
     };

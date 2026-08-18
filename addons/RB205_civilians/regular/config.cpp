@@ -31,8 +31,8 @@ class cfgPatches
 
 #include "\RB205_civilians\macros.hpp"
 
-#define ITEMS_CITIZEN {"JLTS_ids_rep_civ","JLTS_credit_card","JLTS_intel_datapad_civ"}
-#define ITEMS_SMUGGLER {"JLTS_ids_rep_civ","JLTS_credit_card","JLTS_intel_datapad_civ","JLTS_credits_100","JLTS_credits_50","JLTS_credits_10","JLTS_sabacc_deck"}
+#define ITEMS_CITIZEN {"RB205_ids_neutral_civ","JLTS_credit_card","JLTS_intel_datapad_civ"}
+#define ITEMS_SMUGGLER {"RB205_ids_neutral_civ","JLTS_credit_card","JLTS_intel_datapad_civ","JLTS_credits_100","JLTS_credits_50","JLTS_credits_10","JLTS_sabacc_deck"}
 #define ITEMS_PRISONER {}
 
 #define EDITOR_DEF \
