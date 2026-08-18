@@ -62,7 +62,7 @@ class CfgVehicles
 		//Inventory:
 		linkedItems[] = { "RB205_H_nimbusCommando","RB205_V_nimbusCommando","RB205_NV_chip","ItemMap","ItemGPS","ItemCompass","ls_radios_hush98" };
 		respawnlinkedItems[] = { "RB205_H_nimbusCommando","RB205_V_nimbusCommando","RB205_NV_chip","ItemMap","ItemGPS","ItemCompass","ls_radios_hush98" };
-		items[] = {};
+		items[] = { "RB205_ids_cis_civ" };
 		respawnItems[] = {};
 		backpack = "RB205_B_nimbusCommando";
 		weapons[] =

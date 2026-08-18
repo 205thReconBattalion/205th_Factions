@@ -67,9 +67,9 @@ class CfgVehicles
 		//Inventory:
 		linkedItems[] = { "ItemMap","ItemGPS","ItemCompass","ls_radios_hush98" };
 		respawnlinkedItems[] = { "ItemMap","ItemGPS","ItemCompass","ls_radios_hush98" };
-		backpack = "";
-		items[] = {};
+		items[] = { "RB205_ids_cis_civ" };
 		respawnItems[] = {};
+		backpack = "";
 		weapons[] =
 		{
 			"RB205_E5",
@@ -107,7 +107,7 @@ class CfgVehicles
 		//Inventory:
 		linkedItems[] = { "ItemMap","ItemGPS","ItemCompass","ls_radios_hush98" };
 		respawnlinkedItems[] = { "ItemMap","ItemGPS","ItemCompass","ls_radios_hush98" };
-		items[] = {};
+		items[] = { "RB205_ids_cis_civ" };
 		respawnItems[] = {};
 		backpack = "";
 		weapons[] =
